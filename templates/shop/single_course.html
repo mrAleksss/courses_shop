@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Course: {{ course.name }}{% endblock title %}
+
+{% block content %}
+<h1>{{ course.name }}</h1>
+<h2>{{ course.category }}</h2>
+<div class="description">
+    <span>This course for upgraded people who love develop themselfes</span>
+    <p>Price: {{ course.price }}</p>
+    <p>This course attends: {{ course.students_qty }} students</p>
+    <p>Liked it: {{ course.reviews_qty }} people</p>
+    <button class="btn btn-primary">Buy</button>
+</div>
+
+
+{% endblock content %}
